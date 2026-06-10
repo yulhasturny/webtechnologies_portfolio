@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  color: rgb(237, 152, 209);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  background-color: rgb(90, 70, 107);
+  padding-left: 25px;
+  border-radius: 25px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: rgb(237, 152, 209);
+  padding-right: 25px;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
