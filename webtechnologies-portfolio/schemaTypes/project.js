@@ -7,22 +7,38 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'description',
       title: 'Description',
-      type: 'text'
+      type: 'text',
     },
     {
       name: 'year',
       title: 'Year',
-      type: 'number'
+      type: 'number',
     },
     {
       name: 'image',
       title: 'Image',
-      type: 'image'
-    }
-  ]
+      type: 'image',
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+    },
+
+    {
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [{type: 'image'}],
+    },
+  ],
 }
